@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+            <form id="loginForm" action="#" >
+                <h1>Login</h1>
+        
+                <div class="input-box">
+                   <input type="text" placeholder="username" required id="userName">
+                </div>
+        
+                <div class="input-box">
+                    <input type="password" placeholder="password" required id="userPass">
+                 </div>
+                 
+                 <button type="submit" class="btn">Log in</button>
+               
+              </form>
+
+        </div>
+        <div class="AccountCard" id="accountCard" style="display: none;">
+             <div>
+                <h2 class="centro">Account Information</h2>
+                <p class="mover"><strong>Username:</strong> <span id="accountName"></span></p>
+                <p class="mover"><strong>Balance:</strong> $<span id="accountBalance"></span></p>
+                <button class="buttons" onclick="retirar()">Retirar</button>
+                <button class="buttons" onclick="depositar()">Depositar</button>
+                <button class="buttons" onclick="salir()">salir</button> <!--Boton para salir del accountCard-->
+             </div>
+        </div>
+    <script src="datebase.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
